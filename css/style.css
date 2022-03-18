@@ -1,0 +1,527 @@
+/*
+	author: Wasif Azhar Nibir;
+	mail: wasif9673@gmail.com;
+*/
+
+/*
+
+	===index===
+
+	1.Header
+	2.Home
+	3.About
+	4.Work
+	5.Blog
+	6.Contact	
+*/
+/* Theme CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Global CSS */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+/* Header Section */
+nav#mainNav {
+    background-color: white;
+}
+a.navbar-brand.js-scroll-trigger {
+    color: black;
+}
+a.nav-link.js-scroll-trigger{
+	color: #111111;
+	margin: 0px 5px;
+	position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+a.nav-link.js-scroll-trigger:hover{
+    color: #16A0F8;
+}
+a.nav-link.js-scroll-trigger.active{
+    color: #16A0F8;
+}
+.fa.fa-bars{
+	color: black;
+}
+/* About Section */
+.about{
+	background: url(../img/banner.jpg)no-repeat;
+	background-size: cover;
+	background-position: top center;
+    height: 700px;
+}
+.about-content h2{
+	color: white;
+	font-size:115px;
+    text-align: center;
+}
+.about-content span{
+	width: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #17A3FA;
+}
+.about-content p{
+    color: white;
+    font-size: 28px;
+    margin: 15px 170px;
+}
+.about-btn{
+	border: 2px solid #17A3FA;
+    background: transparent;
+    padding: 15px 20px;
+    color: white;
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+}
+.about-btn:hover{
+    background-color: #16A0F8;
+    transition: 0.5s ease-in-out;
+}
+.fa.fa-chevron-down{
+    color: white;
+    margin-left: 545px;
+    margin-top: 100px;
+}
+/* Work Section */
+.work{ 
+    height: 650px;
+    background-color: #F5F9FA;
+}
+.row.work-row {
+    margin-bottom: 20px;
+}
+.work-content h2{
+text-align: center;
+    color: #2C3A54;
+    padding: 40px 0px 15px 0px;
+    font-size: 30px;
+}
+.work-content p{
+text-align: center;
+    color: #979998;
+    padding: 0px 130px;
+}
+.abt-history h2{
+text-align: center;
+    color: #2C3A54;
+    padding: 15px 0px 15px 24px;
+    font-size: 20px;
+}
+.abt-history p{
+    font-size: 14px;
+    text-align: center;
+    color: #979998;
+    padding: 0px 60px;
+}
+.fa.fa-mobile{
+    color: white;
+    padding: 10px 26px;
+    background: linear-gradient(to right, #47BAFD 0%, #47BAFD 50%, #5FC3FF 50%, #5FC3FF 100%);
+    font-size: 54px;
+    margin-left: 150px;
+}
+.fa.fa-paper-plane{
+    color: white;
+    padding: 20px 20px;
+    background: linear-gradient(to right, #47BAFD 0%, #47BAFD 50%, #5FC3FF 50%, #5FC3FF 100%);
+    font-size: xx-large;
+    margin-left: 150px;
+}
+.fa.fa-bullhorn{
+    color: white;
+    padding: 10px 12px;
+    background: linear-gradient(to right, #47BAFD 0%, #47BAFD 50%, #5FC3FF 50%, #5FC3FF 100%);
+    font-size: 54px;
+    margin-left: 150px;
+}
+
+/* Blog Section */
+.blog{
+	background-color: white;
+    height: 900px;
+}
+.blog-content h2{
+    text-align: center;
+    color: #2C3A54;
+    padding: 15px 0px 15px 24px;
+    font-size: 25px;
+}
+.blog-content p{
+    font-size: 17px;
+    text-align: center;
+    color: #979998;
+    padding: 0px 60px;
+}
+
+.work-img-hover {
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    background: #28a6f3e6;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.fa.fa-search-plus{
+    border-radius: 8%;
+    color: white;
+    margin: 120px 0px 0px 120px;
+    position: absolute;
+    border: 1px solid;
+    padding: 12px; 
+}
+.fa.fa-link{
+    border-radius: 8%;
+    color: white;
+    margin: 120px 0px 0px 170px;
+    position: absolute;
+    border: 1px solid;
+    padding: 12px;
+  
+}
+.work-img:hover .work-img-hover{
+opacity: 1;
+} 
+.row.img-1 {
+    margin-bottom: 25px;
+}
+
+/* Contact Section */
+.contact{
+    background: url(../img/stay.jpg)no-repeat;
+    background-size:cover ;
+}
+
+.contact-content h2{
+    text-align: center;
+    color: white!important;
+    margin: 15px 0px 18px -28px;
+    font-size: 25px;
+}
+.contact-content p{
+    font-size: 17px;
+    text-align: center;
+    color: #878E96;
+    margin: 0px 0px 12px -18px;
+}
+.form-control-1{
+    background-color: transparent;
+    width: 30%;
+    height: 20px;
+    padding: 5px 0px 5px 13px;
+    margin: 15px 0px 35px 60px;
+    border: 2px solid #969B9E;
+}
+.form-control-2{
+    background-color: transparent;
+    width: 30%;
+    height: 20px;
+    padding: 5px 0px 5px 13px;
+    margin: 15px 0px 35px 38px;
+    border: 2px solid #969B9E;
+}
+.form-control-3{
+    background-color: transparent;
+    width: 65%;
+    height: 200px;
+    padding: 8px 0px 0px 11px;
+    border: 2px solid #969B9E;
+    margin-left: 60px;
+}
+.contact-submit-btn{
+    margin: 15px 0px -57px 548px;
+    display: block;
+    background-color: transparent;
+    padding: 16px 35px;
+    border: 2px solid #16A0F8;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.contact-submit-btn:hover{
+    background-color: #16A0F8;
+    transition: 0.5s ease-in-out;
+}
+.Subscribe.Newsletter{
+    margin-left: 60px;
+}
+label{
+    color: white;
+}
+/* Review Section */
+
+/* Footer section */
+.footer{
+	height: 85px;
+	padding: 0px;
+	margin: 0px 0px;
+}
+.footer-bottom p{
+	margin-top: 25px;
+    font-weight: 700;
+}
+.row.Footer {
+	margin: 0px!important;
+}
+.footer-content ul{
+    margin-left: 270px;
+    margin-top: 20px;  
+}
+.footer-content ul li{
+    display: inline-block;
+    margin: 0px 5px;   
+}
+.fa.fa-facebook{
+    background: #14A4FA;
+    color: white;
+    padding: 13px 18px
+}
+.fa.fa-twitter{
+    background: #14A4FA;
+    color: white;
+    padding: 13px 18px;
+}
+.fa.fa-google-plus{
+    background: #14A4FA;
+    color: white;
+    padding: 13px 18px
+}   
+.fa.fa-linkedin{
+    background: #14A4FA;
+    color: white;
+    padding: 13px 18px
+}
+
+/*Responsive breakpoints*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 320px) and (max-width: 576px){
+.about-content h2 {
+    font-size: 65px;
+}
+.about-content p {
+    font-size: 22px;
+    margin: 15px 32px;
+}
+.about-content span {
+    width: 80%;
+}
+.fa.fa-chevron-down {
+    margin-left: 135px;
+}
+.work-content p {
+    padding: 0px;
+}
+.work{
+    height: auto;
+}
+.col-md-4.col-sm-4.abt-history {
+    margin-bottom: 15px;
+}
+i.fa.fa-paper-plane {
+    margin-left: 115px;
+}
+i.fa.fa-mobile {
+    margin-left: 115px;
+}
+i.fa.fa-bullhorn {
+    margin-left: 115px;
+}
+.blog{
+    height: auto;
+}
+.col-md-4.work-img {
+    margin-bottom: 30px;
+}
+i.fa.fa-search-plus {
+    margin: 80px 0px 0px 100px;
+}
+i.fa.fa-link {
+    margin: 80px 0px 0px 150px;
+}
+.form-control-1 {
+    width: 65%;
+    padding: 5px 0px 5px 13px;
+    margin: 15px 0px 35px 60px;
+}
+.form-control-2 {
+    width: 65%;
+    margin: 15px 0px 35px 60px;
+}
+.contact-content p {
+    margin: 0px 0px 12px 0px;
+}
+.contact-content h2 {
+    margin: 0px 0px 12px 0px;
+}
+.contact-submit-btn {
+    margin: 30px 0px -57px 100px;
+    padding: 0px 35px;
+}
+.footer-content ul {
+    margin-left: 20px;
+}
+.footer-bottom p {
+    margin-left: 55px;
+}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */ /*sm*/
+@media (min-width: 576.01px) and (max-width: 768px){
+.about-content p {
+    font-size: 22px;
+    margin: 15px 105px;
+}
+.about-content h2 {
+    font-size: 100px;
+}
+.fa.fa-chevron-down {
+    margin-left: 245px;
+}
+.work-content p {
+     padding: 0px ;
+}
+.work{
+    height: auto;
+}
+i.fa.fa-paper-plane {
+    margin-left: 50px;
+}
+i.fa.fa-mobile {
+    margin-left: 50px;
+        margin-bottom: 20px;
+}
+i.fa.fa-bullhorn {
+    margin-left: 50px;
+}
+.abt-history p {
+    padding: 0px;
+}
+.blog{
+    height: auto;
+}
+.col-md-4.work-img {
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.work-img-hover {
+    width: 83%;
+}
+.contact-submit-btn {
+    margin: 15px 0px -57px 315px;
+    padding: 12px 30px;
+}
+.footer-content ul {
+    margin-left: -6px;
+}
+.form-control-1 {
+    margin: 15px 0px 35px 85px;
+}
+.form-control-2 {
+    margin: 15px 0px 35px 22px;
+}
+.form-control-3 {
+    margin-left: 85px;
+}
+.Subscribe.Newsletter {
+    margin-left: 85px;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */ /*md*/
+@media (min-width: 768.01px) and (max-width: 992px){
+.about-content p {
+    font-size: 20px;
+    margin: 15px 80px;
+}
+.fa.fa-chevron-down {
+    margin-left: 340px;
+}
+.work-content p {
+    padding: 0px 50px;
+}
+.work{
+    height: 680px;
+}
+i.fa.fa-paper-plane {
+    margin-left: 75px;
+}
+i.fa.fa-mobile {
+    margin-left: 75px;
+}
+i.fa.fa-bullhorn {
+    margin-left: 75px;
+}
+.abt-history p {
+    padding: 0px 45px;
+}
+.work-img-hover {
+    width: 89%;
+}
+i.fa.fa-search-plus {
+    margin: 60px 0px 0px 60px;
+}
+i.fa.fa-link {
+    margin: 60px 0px 0px 110px;
+}
+.form-control-2 {
+    margin: 15px 0px 35px 25px;
+}
+.contact-submit-btn {
+    margin: 15px 0px -57px 320px;
+}
+.footer-content ul {
+    margin-left: 85px;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */ /*lg*/
+@media (min-width: 992.01px) and (max-width: 1200px){
+    .about-content p {
+    font-size: 22px;
+}
+.fa.fa-chevron-down {
+    margin-left: 460px;
+}
+i.fa.fa-paper-plane {
+    margin-left: 115px;
+}
+i.fa.fa-mobile {
+    margin-left: 115px;
+}
+i.fa.fa-bullhorn {
+    margin-left: 115px;
+}
+.work-img-hover {
+    width: 92%;
+}
+i.fa.fa-search-plus {
+    margin: 85px 0px 0px 110px;
+}
+i.fa.fa-link {
+    margin: 85px 0px 0px 155px;
+}
+.contact-submit-btn {
+    margin: 15px 0px -57px 450px;
+}
+.footer-content ul {
+    margin-left: 200px;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */ /*xl*/
+@media (min-width: 1200px)
